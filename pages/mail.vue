@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <v-container>
         <h2>Mail</h2>
-        <v-card>
+      <div>
             <letterV :letters="letters"/>
-          </v-card>
-    </div>
+      </div>
+    </v-container>
 </template>
 <script>
 import letterV from "../components/letter.vue";
@@ -12,12 +12,15 @@ import letterV from "../components/letter.vue";
         components: {
             letterV
         },
-        data: {
-            letters: [
-                {id: 'id', name:'name', description: 'desc'},
-                {id: 'id', name:'name', description: 'desc'},
-                {id: 'id', name:'name', description: 'desc'},
-            ]
+        data: function () {
+            return {
+              letters: [
+                {id: '1', name:'Письмо от мамы', description: 'Купи белый хлеб'},
+                {id: '2', name:'Письмо от бабушки', description: 'Ты когда домой придешь?'},
+                {id: '3', name:'Письмо от Печкина', description: 'Не сиди на печи'},
+              ]
+            }
+
 }
 }
 </script>

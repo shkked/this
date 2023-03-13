@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <v-container>
         <h2>About us</h2>
-    </div>
+    </v-container>
 </template>
 <script></script>
 <style scoped></style>
