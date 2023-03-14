@@ -1,8 +1,8 @@
 <template>
     <v-container>
         <v-card class="mt-5" v-for="item in letters">
-                <v-card-title>{{item.name}}</v-card-title>
-                <v-card-text>{{ item.description }}</v-card-text>
+                <v-card-title>Название: {{item.name}}</v-card-title>
+                <v-card-text>Описание: {{ item.description }}</v-card-text>
                 <v-spacer/>
           <div class="parent-btn">
                 <v-btn>
